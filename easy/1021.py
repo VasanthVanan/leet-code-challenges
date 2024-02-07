@@ -5,16 +5,21 @@ def function(inputs):
     opened, prev, flag = 0, 0, False
     result = ""
     for i, char in enumerate(inputs):
+        # if we have opened parentheses, then we need to keep track of it
         if char == '(':
             opened += 1
+            # if we have opened parentheses and we have not seen a closing parentheses yet, then we need to keep track of it
             if(opened >= 2 and not flag):
                 flag = True
         else:
+            # if we have a closing parentheses, then we need to keep track of it
             opened -= 1
 
+        # if we have closed all the opened parentheses, then we need to add the substring to the result
         if(opened == 0 and flag):
             result += inputs[prev+1: i]
             prev, flag = i + 1, False
+        # if we have not closed all the opened parentheses, then we need to keep track of the previous index
         elif(opened == 0 and not flag):
             prev = i + 1
     

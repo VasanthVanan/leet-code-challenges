@@ -6,6 +6,7 @@ def function(inputs):
     sum, prev = 0, 0
     for char in word:
         if char in keyboard:
+            # if the character is in the keyboard, then we need to calculate the distance
             sum += abs(keyboard.index(char) - prev)
             prev = keyboard.index(char)
     return sum

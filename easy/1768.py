@@ -5,7 +5,9 @@ def function(inputs):
     word1, word2 = inputs[0], inputs[1]
     len1, len2 = len(word1), len(word2)
     flag, merged = True, ""
+    # iterate till any of the string length is zero
     while len1 or len2:
+        # toggle flag to merge strings alternately
         if flag:
             merged += word1[0]
             word1 = word1[1:]
