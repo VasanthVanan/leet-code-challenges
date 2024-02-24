@@ -1,17 +1,13 @@
 # Leet Code Challenges: Practice
 
-This repository contains solutions to [Leet Code](https://leetcode.com/) easy challenges. Each solution is organised by its corresponding problem number. Enter a specific keyword to search for a solution.
+This repository contains solutions to [Leet Code](https://leetcode.com/) easy challenges. Each solution is organised by its corresponding problem number. 
 
-Search keyword: <input type="text" id="searchInput">
+It will be easier to find a solution by entering a specific `KEYWORD` in the search.
 
-Click below to search for the string:
+```
+https://github.com/VasanthVanan/leet-code-challenges/search?q=KEYWORD
+```
 
-[Generate Greeting](javascript:void(0);)
+Example: Parentheses
 
-<script>
-document.querySelector('[href="javascript:void(0);"]').addEventListener('click', function() {
-  const name = document.getElementById('searchInput').value;
-  const searchUrl = `https://github.com/VasanthVanan/leet-code-challenges?search=${encodeURIComponent(name)}`;
-  window.location.href = searchUrl;
-});
-</script>
+[https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses](https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses)
