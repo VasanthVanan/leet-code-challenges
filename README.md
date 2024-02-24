@@ -10,4 +10,4 @@ https://github.com/VasanthVanan/leet-code-challenges/search?q=KEYWORD
 
 Example: Parentheses
 
-[https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses](https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses) {:target="_blank"}
+<a href="https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses" target="_blank">https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses</a>
