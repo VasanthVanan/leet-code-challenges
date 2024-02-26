@@ -1,0 +1,29 @@
+# 1967. Number of Strings That Appear as Substrings in Word
+# https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/description/ 
+
+def function(inputs):
+    patterns, word = inputs[0], inputs[1]
+
+    # create a anonymous function within map that checks the presence of patterns in word
+    # return the count of 'True'
+    return (list(map(lambda x: x in word, patterns))).count(True)
+
+# Test Case 1
+input_1 = [["a","abc","bc","d"], "abc"]
+expected_output_1 = 3
+
+# Test Case 2
+input_2 = [["a","b","c"], "aaaaabbbbb"]
+expected_output_2 = 2
+
+# Test Case 3
+input_3 = [["a","a","a"], "ab"]
+expected_output_3 = 3
+
+try:
+    assert function(input_1) == expected_output_1, f'Test Case 1 Failed'
+    assert function(input_2) == expected_output_2, f'Test Case 2 Failed'
+    assert function(input_3) == expected_output_3, f'Test Case 3 Failed'
+    print('\033[92m All test cases passed! \033[0m')
+except AssertionError as e:
+    print('\033[91m Error: {}\033[0m'.format(e))
