@@ -10,7 +10,7 @@ It will be easier to find a solution by entering a specific `KEYWORD` in the sea
 https://github.com/VasanthVanan/leet-code-challenges/search?q=KEYWORD
 ```
 
-For Example: Parentheses <a href="https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses" target="_blank">(https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses)</a>
+Example: Parentheses <a href="https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses" target="_blank">https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses</a>
 
 ### Template Configuration
 
@@ -20,13 +20,11 @@ This repo uses a common `template.py` for most of the files. To reuse this templ
 2. Select "Snippets: Configure User Snippets" from the dropdown
 3. select "python" as the template language
 4. Copy & paste the following snippet:
+   <details>
+     <summary>Leetcode: Python Template</summary>
+
    ```json
    {
-        // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
-        // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-        // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-        // same ids are connected.
-        // Example:
         "Leetcode Template": {
             "prefix": "lc-temp",
             "body": [
@@ -59,6 +57,8 @@ This repo uses a common `template.py` for most of the files. To reuse this templ
             ],
             "description": "Leetcode Python Template"
         }
-    }
+   }
    ```
+
+   </details>
 5. use this template in a new file by typing `lc-temp` and hitting enter.
