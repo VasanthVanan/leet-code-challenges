@@ -10,19 +10,19 @@ It will be easier to find a solution by entering a specific `KEYWORD` in the sea
 https://github.com/VasanthVanan/leet-code-challenges/search?q=KEYWORD
 ```
 
-Example: Parentheses <a href="https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses" target="_blank">https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses</a>
+Example: Parentheses 
+
+<a href="https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses" target="_blank">https://github.com/VasanthVanan/leet-code-challenges/search?q=Parentheses</a>
 
 ### Template Configuration
 
-This repo uses a common `template.py` for most of the files. To reuse this template, you can configure it using VSCode.
+This repo uses a common `template.py` for most of the files. To reuse, you can configure it using VSCode.
 
 1. Open the command palette by pressing Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac).
 2. Select "Snippets: Configure User Snippets" from the dropdown
 3. select "python" as the template language
 4. Copy & paste the following snippet:
-   <details>
-     <summary>Leetcode: Python Template</summary>
-
+   
    ```json
    {
         "Leetcode Template": {
@@ -59,6 +59,5 @@ This repo uses a common `template.py` for most of the files. To reuse this templ
         }
    }
    ```
-
-   </details>
+   
 5. use this template in a new file by typing `lc-temp` and hitting enter.
