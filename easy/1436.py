@@ -39,6 +39,6 @@ try:
     assert function(input_3) == expected_output_3, f"Test Case 3 Failed"
     assert function(input_4) == expected_output_4, f"Test Case 4 Failed"
     assert function(input_5) == expected_output_5, f"Test Case 5 Failed"
-    print("\033[92m\nAll test cases passed!\n\033[0m")
+    print("\033[92m All test cases passed!\033[0m")
 except AssertionError as e:
-    print("\033[91m\nError: {}\033[0m".format(e))
+    print("\033[91m Error: {}\033[0m".format(e))
