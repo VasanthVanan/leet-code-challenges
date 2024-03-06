@@ -1,21 +1,28 @@
 # 1863. Sum of All Subset XOR Totals
 # https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/ 
 
+from functools import reduce
+
 def function(inputs):
+    # function to get all subsets of a list using recursion
     def subset(nums):
         if not nums:
             return [[]]
         else:
+            # slice off first element
             subsets = subset(nums[1:])
             return subsets + [[nums[0]] + x for x in subsets]
         
+    # function to get the xor of all elements in a list
     def xor(nums):
         sum = 0
         for i in nums:
-            result = 0
-            for j in i:
-                result ^= j
-
+            if i:
+                # used reduce to get the xor of all elements in the list
+                result = reduce(lambda x, y: x ^ y, i)
+            else:
+                result = 0
+            # add the result to the sum
             sum += result
         return sum
         
