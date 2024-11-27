@@ -18,7 +18,7 @@ def function(inputs):
     return -1
 
     # Python Inbuilt Method
-    # return [haystack.index(needle)]
+    # return haystack.find(needle)
 
 
 # Test Case 1

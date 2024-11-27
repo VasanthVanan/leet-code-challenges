@@ -2,10 +2,10 @@
 # https://leetcode.com/problems/valid-parentheses/description/
 
 def function(s):
-    paranthesis_dict = {'(': ')', '{': '}', '[': ']'}
+    paranthesis_dict = { '(' : ')', '[' : ']', '{' : '}'}
     stack = []
     comparer = ''
-    
+
     if not s:
         return False
     

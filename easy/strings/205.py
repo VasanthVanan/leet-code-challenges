@@ -2,28 +2,18 @@
 # https://leetcode.com/problems/isomorphic-strings/description/
 
 def function(inputs):
-    str_1 = inputs[0]
-    str_2 = inputs[1]
-    letter_hash = {}
-
-    if(len(str_1)!= len(str_2)):
-        return False
-    
-    if(len(str_1) <= 1 or len(str_2) <= 1):
-        return True
-
-    # iterate through the strings
-    for i in range(len(str_1)):
-
-        # check the hash value is not equal to the current character
-        if((str_1[i] in letter_hash and letter_hash[str_1[i]] != str_2[i]) or (str_1[i] == str_2[i])):
-            return False
+    mappings = {}
+    # iterate two strings
+    for a, b in zip(inputs[0], inputs[1]):
         
-        # check if the character is not present in the hash
-        if(str_1[i] not in letter_hash):
-            letter_hash[str_1[i]] = str_2[i]
+        # if new, insert it to hashmap
+        if a not in mappings:
+            mappings[a] = b  
+        elif a in mappings and b != mappings[a]:  
+                return False
 
-    return True
+    # check if values are unique with equal length
+    return len(set(mappings.values())) == len(mappings.values())
 
 
 # Test Case 1
