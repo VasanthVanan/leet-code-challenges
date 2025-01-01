@@ -3,9 +3,17 @@
 
 def function(inputs):
     # iterate through the string
+    left, right = 0, len(inputs) - 1
     for i in range(len(inputs)//2):
-        # swap the characters without using a temp variable
-        inputs[i], inputs[-i-1] = inputs[-i-1], inputs[i]
+        
+        # swap the characters without using a temp variable (Naive approach)
+        # inputs[i], inputs[-i-1] = inputs[-i-1], inputs[i]
+
+        # Two-pointer approach
+        inputs[left], inputs[right] = inputs[right], inputs[left]
+        left += 1
+        right -= 1
+
     return inputs
 
 

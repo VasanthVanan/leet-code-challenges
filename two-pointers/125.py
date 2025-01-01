@@ -5,8 +5,19 @@ def function(inputs):
     s = inputs[0]
     # remove all non-alphanumeric characters and convert to lowercase
     s = ''.join(a for a in s if a.isalnum()).strip().lower()
-    # compare the string to its reverse
-    return True if s == s[::-1] else False
+
+    # compare the string to its reverse (Naive approach)
+    # return True if s == s[::-1] else False
+
+    # Two-pointer approach
+    left, right = 0, len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        else:
+            left += 1
+            right -= 1
+    return True
 
 
 # Test Case 1

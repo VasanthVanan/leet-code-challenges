@@ -1,5 +1,5 @@
-# Title
-# URL 
+# 53. Maximum Subarray
+# https://leetcode.com/problems/maximum-subarray/ 
 
 def function(nums):
     maximum_sum = current_sum = nums[0]
