@@ -1,6 +1,6 @@
 # Leet Code Challenges: Practice
 
-This repository contains solutions to [Leet Code](https://leetcode.com/) easy challenges. Each solution is organised by its corresponding problem number. 
+This repository contains solutions to [Leet Code](https://leetcode.com/) challenges based on patterns. Each solution is organised by its corresponding problem number. 
 
 ### Keyword Search
 
